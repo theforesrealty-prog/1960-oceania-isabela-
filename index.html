@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1960 Oceania • Isabela, Puerto Rico</title>
+<meta name="description" content="Luxury relocation residence in Isabela, Puerto Rico. Space, privacy, functionality, and partial ocean views.">
+
+<style>
+:root{
+  --bg:#fbfbf8;
+  --text:#111213;
+  --muted:#5b5f66;
+  --line:rgba(0,0,0,.12);
+  --card:#ffffff;
+  --radius:18px;
+  --shadow:0 20px 60px rgba(0,0,0,.08);
+  --max:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(251,251,248,.95);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:var(--max);
+  margin:auto;
+  padding:14px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+nav a{
+  margin-left:16px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+/* WRAP */
+.wrap{
+  max-width:var(--max);
+  margin:auto;
+  padding:24px 18px 80px;
+}
+
+/* HERO */
+.hero{
+  border-radius:var(--radius);
+  overflow:hidden;
+  position:relative;
+  box-shadow:var(--shadow);
+}
+.hero img{
+  width:100%;
+  height:60vh;
+  min-height:380px;
+  object-fit:cover;
+  display:block;
+}
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.65));
+  display:flex;
+  align-items:flex-end;
+}
+.hero-text{
+  padding:28px;
+  color:#fff;
+  max-width:720px;
+}
+.hero-text small{
+  letter-spacing:.14em;
+  opacity:.9;
+}
+.hero-text h1{
+  font-family:Georgia,serif;
+  font-size:clamp(30px,4vw,54px);
+  line-height:1.05;
+  margin:10px 0;
+}
+
+/* SECTIONS */
+.section{margin-top:48px}
+.kicker{
+  font-size:12px;
+  letter-spacing:.14em;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+.section h2{
+  font-family:Georgia,serif;
+  font-size:32px;
+  margin:0 0 12px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:26px;
+}
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+
+/* CARDS */
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:0 16px 40px rgba(0,0,0,.06);
+}
+.card ul{padding-left:18px;margin:0}
+.card li{margin:10px 0}
+
+/* CHIPS */
+.chips{margin-top:14px}
+.chip{
+  display:inline-block;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:8px 14px;
+  margin:6px 6px 0 0;
+  font-size:14px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:10px;
+}
+@media(max-width:900px){
+  .gallery{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .gallery{grid-template-columns:1fr}
+}
+.gallery img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:14px;
+  cursor:pointer;
+}
+
+/* LIGHTBOX */
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.88);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:100;
+}
+.lightbox img{
+  max-width:92%;
+  max-height:92%;
+  border-radius:18px;
+}
+
+/* FORM */
+form{
+  max-width:520px;
+}
+form input, form textarea{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  margin-bottom:12px;
+  font-size:16px;
+}
+form textarea{min-height:120px}
+form button{
+  padding:14px 20px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  margin-top:70px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+  font-size:12px;
+  color:var(--muted);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <strong>1960 Oceania • Isabela, PR</strong>
+    <nav>
+      <a href="#opportunity">Opportunity</a>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Showings</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="hero">
+  <img src="https://photos.zillowstatic.com/fp/dff15ba432da639b801a8185e826cdfa-cc_ft_960.jpg" alt="1960 Oceania Isabela">
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <small>SPACE • PRIVACY • FUNCTIONALITY</small>
+      <h1>A luxury home that makes sense for relocation.</h1>
+      <p>Designed for long-term living in Puerto Rico with generous space, privacy, and partial ocean views.</p>
+    </div>
+  </div>
+</section>
+
+<section id="opportunity" class="section">
+  <div class="kicker">The opportunity</div>
+  <div class="grid">
+    <div>
+      <h2>1960 Oceania, Isabela</h2>
+      <p>This is not a vacation home. This is a residence designed for relocation buyers.</p>
+      <div class="chips">
+        <span class="chip">$1,225,000</span>
+        <span class="chip">6,400+ sqft</span>
+        <span class="chip">~1,800 m² lot</span>
+        <span class="chip">Partial ocean views</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="kicker">Ideal for</div>
+      <ul>
+        <li>Mainland buyers relocating to Puerto Rico</li>
+        <li>Remote professionals</li>
+        <li>Large or multigenerational families</li>
+        <li>Cash or strong conventional buyers</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="kicker">Home features</div>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li>6,400+ square feet of interior living space</li>
+        <li>Flexible layout for offices and guest suites</li>
+        <li>High ceilings and natural light</li>
+        <li>Expansive entertaining areas</li>
+        <li>Minutes from beaches, dining, and services</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p>Relocation buyers prioritize livability over hype. This home delivers exactly that.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="kicker">Gallery</div>
+  <h2>Explore the property</h2>
+  <div class="gallery">
+    <img src="https://photos.zillowstatic.com/fp/dbd21b0a9357323df97eb2f88dba4c74-cc_ft_576.jpg" alt="">
+    <img src="https://photos.zillowstatic.com/fp/e0d9a74960eb3dac7d26dcd5b2de594a-cc_ft_576.jpg" alt="">
+    <img src="https://photos.zillowstatic.com/fp/271b4b2487b3398036e029b6a5b7f036-cc_ft_576.jpg" alt="">
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="kicker">Private showings</div>
+  <h2>Request a showing</h2>
+
+  <form action="https://formspree.io/f/mkogdbyv" method="POST">
+    <input type="hidden" name="source" value="1960 Oceania Isabela Landing Page">
+    <input name="first_name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input name="phone" placeholder="Phone">
+    <textarea name="message" placeholder="Timeline / Cash or financing"></textarea>
+
+    <!-- Optional helpers -->
+    <input type="hidden" name="_subject" value="New lead – 1960 Oceania Isabela">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit">Request Showing</button>
+  </form>
+</section>
+
+<footer>
+  <div>© 1960 Oceania • Isabela, Puerto Rico</div>
+  <div>Luxury relocation marketing</div>
+</footer>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+  <img id="lightboxImg">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  const lb=document.getElementById("lightbox");
+  const lbImg=document.getElementById("lightboxImg");
+  document.querySelectorAll(".gallery img").forEach(img=>{
+    img.addEventListener("click",()=>{
+      lbImg.src=img.src;
+      lb.style.display="flex";
+    });
+  });
+  lb.addEventListener("click",()=>{
+    lb.style.display="none";
+    lbImg.src="";
+  });
+});
+</script>
+
+</body>
+</html>
